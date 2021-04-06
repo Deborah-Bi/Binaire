@@ -1,0 +1,71 @@
+﻿html {
+
+background-color: #FFE2B4	;
+color:black;
+width:700px;
+
+}
+
+header {
+
+background-color: #F5A92D	;
+color:black;
+text-align:center;
+
+}
+
+nav {
+
+width:200px;
+background-color:#FFC725;
+color:bleue;
+margin-left: auto;
+margin-right: auto; 
+padding:10px;
+
+
+}
+
+a:link {
+ color:red;
+ text-decoration: underline;
+ }
+
+h2 {
+
+background-color: #FFD14D;
+color:black;
+text-align: left;
+
+}
+
+img {
+
+margin-left: auto;
+margin-right: auto; 
+
+}
+
+section {
+
+background-color:D7E7FF;
+text-align: left;
+padding:10px;
+
+}
+
+footer {
+
+height:75px;
+background-color:#FAA700;
+text-align:right;
+float:right;
+color:white;
+
+}
+
+#survol{
+
+display:block;
+
+}

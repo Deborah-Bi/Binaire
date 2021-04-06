@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conversion</title>
+		<meta charset="utf-8" />
+ 		<link rel="stylesheet" type="text/css" href="bitumba3.css"/>
+	</head>
+
+	<body> 
+ 		
+		<header>
+			<center><h1>Conversion binaire,décimal et héxadécimal</h1></center>
+			<script language="javascript">
+			function valider() {
+			if (document.getElementById('serie1b').checked) {
+			alert('Bravo !!!')
+			} else {
+			alert('Votre réponse est incorrecte...')
+			}
+			}
+			</script>
+
+		</header>
+		<center><div>Le codage binaire est en ?</div>
+		<div>
+		<input name="serie1" id="serie1a" type="radio">base 10<br>
+		<input name="serie1" id="serie1b" type="radio"> base 2<br>
+		<input name="serie1" id="serie1c" type="radio">base 16<br>
+		</div>
+		<div align="center"><input type="button" onClick="valider()" value="Valider"></div></center>
+		<nav>
+		  <ul>
+		    <li><img src="bitumba-image11.jpg" alt="nombres." height="200"/></li>
+		  </ul>	
+		
+		</nav>
+		<p><a href="bitumba-index.html">Clique ici pour aller sur la page d'acceuil.</a>
+		<section>
+		   <h2>Conversion décimal-binaire</h2>
+		     <p>Convertissons 00011010 en décimal à l'aide du tableau ci-dessous:
+		     <center><img src="bitumba-image7.jpg" alt="tableau" height="150" title=""/></center>
+		     <p>Donc 00011010(base2)= 26(base10)
+	              <center><p>Maintenant convertissons 167 en binaire:
+			<br/> Dans 167 on a 0 fois 256
+			<br/>On va maintenant essayer de voir avec la puissance inférieur.
+			<br/>Dans 167 on a 1 fois 128
+			<br/>On retire donc 128 à la valeur 167. Ce qui donne: 167-128 = 39
+			<br/>Dans 39 on a 0 fois 64 
+			<br/>On passe alors à la puissance inférieur.
+			<br/>Dans 39 on a 1 fois 32 
+			<br/>On fait comme tout à l'heure, on retire 32 à 39, soit: 39-32 = 7
+			<br/>Dans 7 on a 0 fois 16 
+			<br/>Dans 7 on a 0 fois 8 
+			<br/>Dans 7 on a 1 fois 4 
+			<br/>7-4 = 3
+			<br/>Dans 3 on a 1 fois 2 
+			<br/>3-2 = 1
+			<br/>Dans 1 on a 1 fois 1 
+			<br/>En utilisant cette méthode on trouve que 167(décimal) est égal à 1010 0111(binaire).</center>
+		     </p>
+		</section>
+
+		<section>
+		   <h2>Converssion binaire-hexadécimal</h2>
+		     <p>On va utiliser un tableau un peu différent avec un sous-total en décimal pour arriver jusqu’à la conversion hexadécimale.
+			Cette fois-ci on découpe les bits, en groupe de 4. Voici ce que ça donne, toujours avec notre nombre 26.
+			<center><img src="bitumba-image8.jpg" alt="tableau" height="150"/></center>
+		    <p>Une fois que l’on a converti les différents groupes, il suffit de coller les valeurs obtenues :1A.
+			<center>00011010(base2)=1A(base16)=26(base10)</center>
+			<p>Maintenant nous allons contivertir F7B en binaire, en mettant les valeurs dans 3 groupes:
+		     <center><img src="bitumba-image9.jpg" alt="tableau" height="100"/>
+		    <p>Donc F7B = 1111 0111 1011</center>
+			</p>
+		</section>
+
+		<section>
+		    <h2>Convertion décimal-héxadécimal</h2>
+			<p>Il suffit de reprendre notre tableau du dessus avec les valeurs en puissance et en décimal :
+			<center><img src="bitumba-image10.jpg" alt="tableau" height="100"/></center>
+			<p>Donc notre résultat est 2048+1024+512+256+64+32+16+8+2+1 = 3963
+			  Pour résumer : F7B = 1111 0111 1011 = 3963
+			<a href="https://www.culture-informatique.net/conversion-binaire-decimal-hexadecimal-main/"target=_blank">Clique ici pour voir le site utilisée</a>
+			<br/><a href="http://www.elektronique.fr/cours/code/convertir_binaire-decimal.php/"target="_blank">Clique ici pour voir le deuxième site utilisée</a>
+
+		
+		
+		<footer>
+		    <p>BITUMBA - Tous droits réservés</p>
+		</footer>
+
+	</body>
+</html>
